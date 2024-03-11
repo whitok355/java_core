@@ -7,17 +7,17 @@ public class Program {
     Scanner scan = new Scanner(System.in);
     public void createAcc(){
         Boolean flag = true;
-        int res = user.createAccount(scan);
-        switch(res){
-            case 1:
-                router();
-                flag = true;
-                break;
-            case 0:
-                flag = false;
-                Msg.printMsg("Account block or no exist");
-                break;
-        }
+            int res = user.createAccount(scan);
+            switch(res){
+                case 1:
+                    router();
+                    flag = true;
+                    break;
+                case 0:
+                    flag = false;
+                    Msg.printMsg("Account block or no exist");
+                    break;
+            }
     }
 
     public void router(){
