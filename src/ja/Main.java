@@ -1,11 +1,15 @@
 package ja;
 
-import java.util.Scanner;
+import java.io.File;
+import java.nio.file.Path;
 
 public class Main {
     public static void main(String[] args) {
-        Program pr = new Program();
+        File homeDirectory = new File("./src/ja");
+        File backupDirectory = new File("./backup");
 
-        pr.createAcc();
+        BackupCreator backupCreator = new BackupCreator(homeDirectory, backupDirectory);
+        backupCreator.createBackup();
+
     }
 }
