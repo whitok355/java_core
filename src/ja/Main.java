@@ -11,5 +11,6 @@ public class Main {
         BackupCreator backupCreator = new BackupCreator(homeDirectory, backupDirectory);
         backupCreator.createBackup();
 
+        Tree.print(homeDirectory, " ", false);
     }
 }
